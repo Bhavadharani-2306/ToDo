@@ -76,7 +76,7 @@ const complete=async(task)=>{
         {/* leftcontent */}
         <div className='leftcontent'>
             <img src={dp} alt="" className='img1' />
-            <h2 className='h2'>Hi {name}</h2>
+            <h2 className='h2'>Hi, {name}</h2>
             <img src={tasking} alt="" className='tasking'/>
         </div>
         
