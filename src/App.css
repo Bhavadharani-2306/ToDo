@@ -59,7 +59,7 @@
 
 .mytask{
   margin: 10px;
-  border: 10px;
+  border: 10px solid black;
 }
 
 .inputcontent{
