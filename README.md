@@ -74,7 +74,7 @@ This is the image which we are going to insert in the web page for building the 
     ```
 - **Switching between routes**
   
-    ```
+    ```jsx
       <Link to="/home">
         <button>
             <img src= {google} alt="" className='google' />
@@ -174,3 +174,40 @@ export default Signin
     return()=>displayData()
   },[navigate])
   ```
+
+- **Display of 'Dp' and 'Name'**
+
+    ```jsx
+     {/* leftcontent */}
+        <div className='leftcontent'>
+            <img src={dp} alt="" className='img1' />
+            <h2 className='h2'>Hi {name}</h2>
+            <img src={image} alt="" className='tasking'/>
+        </div>
+    ```
+
+    ## Importing documents from Firebase
+
+   ```javascript
+   import { getDocs, collection } from "firebase/firestore";
+   import { db } from "./firebase-config"; 
+   useEffect(() =>{
+   const gettasks = async() => {
+   const data = await getDocs(taskref)
+   const filtereddata = data.docs.map(doc => ({...doc.data(),id:doc.id}))
+   setTasks(filtereddata)
+   }
+
+   gettasks()
+   ```
+
+   ## Integrate Firebase
+
+   ## Deploy the website in CloudFlare
+
+   ### Steps to Deploy
+
+   1. **Login**
+   2. **Connect to the repository**
+   3. **Configure**
+   4. **Deploy**
