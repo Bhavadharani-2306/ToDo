@@ -36,8 +36,8 @@
 }
 
 .tasking{
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   padding: 40px;
 }
 
@@ -59,12 +59,20 @@
 
 .mytask{
   margin: 10px;
-  border: 10px solid black;
+  border: 3px solid rgb(119, 117, 117);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 7px;
+  box-shadow: 2px 2px gray;
+  background-color:silver;
 }
 
 .inputcontent{
   display: flex;
   gap: 10px;
+  padding: 20px;
 }
 
 .inputcontent input{
@@ -93,7 +101,7 @@
   box-shadow: 5px 5px 2px gray;
   display: flex;
   gap: 10px;
-  padding: 3px;
+  padding: 5px;
   margin: 10px;
   align-items: center;
   justify-content: space-around;

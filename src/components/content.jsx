@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import tasking from "../assets/tasking.png"
 import img2 from "../assets/img2.png"
 import img3 from "../assets/img3.png"
+import image from "../assets/image.png"
 import { useNavigate } from 'react-router-dom'
 import { auth,db} from './firebase'
 import { addDoc, collection, deleteDoc, doc, getDocs, updateDoc } from 'firebase/firestore'
@@ -76,8 +77,8 @@ const complete=async(task)=>{
         {/* leftcontent */}
         <div className='leftcontent'>
             <img src={dp} alt="" className='img1' />
-            <h2 className='h2'>Hi, {name}</h2>
-            <img src={tasking} alt="" className='tasking'/>
+            <h2 className='h2'>Hi {name}</h2>
+            <img src={image} alt="" className='tasking'/>
         </div>
         
         {/* rightcontent */}
